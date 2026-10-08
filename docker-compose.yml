@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: medifusion-mysql
+    environment:
+      MYSQL_DATABASE: medai
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD:-root1709}
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  ml-engine:
+    build:
+      context: ./MediFusion-AI&ML
+    container_name: medifusion-ml
+    ports:
+      - "5000:5000"
+    environment:
+      - PORT=5000
+
+  backend:
+    build:
+      context: ./backend
+    container_name: medifusion-backend
+    ports:
+      - "8080:8080"
+    environment:
+      - DB_URL=jdbc:mysql://mysql:3306/medai
+      - DB_USERNAME=root
+      - DB_PASSWORD=${DB_PASSWORD:-root1709}
+      - JWT_SECRET=${JWT_SECRET:-medaiprojectsecretkeyforjwtauthentication2026}
+      - ML_SERVICE_URL=http://ml-engine:5000
+    depends_on:
+      - mysql
+      - ml-engine
+
+  frontend:
+    build:
+      context: ./medifusion-frontend
+    container_name: medifusion-frontend
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend
+
+volumes:
+  mysql_data:

@@ -1,0 +1,56 @@
+{
+  "modelName": "Diabetes Risk Model",
+  "version": "1.0.0",
+  "algorithm": "StandardScaler + RandomForestClassifier",
+  "numFeatures": 8,
+  "features": [
+    "pregnancies",
+    "glucose",
+    "blood_pressure",
+    "skin_thickness",
+    "insulin",
+    "bmi",
+    "diabetes_pedigree",
+    "age"
+  ],
+  "cvAccuracy": 68.69,
+  "testAccuracy": 68.18,
+  "precision": 0.625,
+  "recall": 0.5556,
+  "f1Score": 0.5882,
+  "rocAuc": 0.641,
+  "topFeatures": [
+    {
+      "feature": "age",
+      "importance": 0.2044
+    },
+    {
+      "feature": "bmi",
+      "importance": 0.1901
+    },
+    {
+      "feature": "glucose",
+      "importance": 0.1738
+    },
+    {
+      "feature": "diabetes_pedigree",
+      "importance": 0.1253
+    },
+    {
+      "feature": "blood_pressure",
+      "importance": 0.0995
+    },
+    {
+      "feature": "pregnancies",
+      "importance": 0.0795
+    },
+    {
+      "feature": "insulin",
+      "importance": 0.0772
+    },
+    {
+      "feature": "skin_thickness",
+      "importance": 0.0503
+    }
+  ]
+}

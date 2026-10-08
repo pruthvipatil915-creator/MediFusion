@@ -1,0 +1,93 @@
+{
+  "modelName": "General Disease Model V2",
+  "version": "2.0.0",
+  "algorithm": "RandomForestClassifier",
+  "n_estimators": 120,
+  "numClasses": 41,
+  "numFeatures": 132,
+  "cvAccuracy": 100.0,
+  "testAccuracy": 100.0,
+  "weightedF1": 1.0,
+  "topFeatures": [
+    {
+      "feature": "muscle_pain",
+      "importance": 0.0214
+    },
+    {
+      "feature": "family_history",
+      "importance": 0.0169
+    },
+    {
+      "feature": "yellowing_of_eyes",
+      "importance": 0.0161
+    },
+    {
+      "feature": "altered_sensorium",
+      "importance": 0.0144
+    },
+    {
+      "feature": "weight_loss",
+      "importance": 0.0142
+    },
+    {
+      "feature": "dark_urine",
+      "importance": 0.0135
+    },
+    {
+      "feature": "muscle_weakness",
+      "importance": 0.0132
+    },
+    {
+      "feature": "mucoid_sputum",
+      "importance": 0.0132
+    },
+    {
+      "feature": "joint_pain",
+      "importance": 0.0129
+    },
+    {
+      "feature": "lack_of_concentration",
+      "importance": 0.0129
+    },
+    {
+      "feature": "loss_of_appetite",
+      "importance": 0.0128
+    },
+    {
+      "feature": "mild_fever",
+      "importance": 0.0127
+    },
+    {
+      "feature": "chest_pain",
+      "importance": 0.0126
+    },
+    {
+      "feature": "red_spots_over_body",
+      "importance": 0.0125
+    },
+    {
+      "feature": "vomiting",
+      "importance": 0.0119
+    },
+    {
+      "feature": "abnormal_menstruation",
+      "importance": 0.0118
+    },
+    {
+      "feature": "unsteadiness",
+      "importance": 0.0115
+    },
+    {
+      "feature": "rusty_sputum",
+      "importance": 0.0114
+    },
+    {
+      "feature": "coma",
+      "importance": 0.0113
+    },
+    {
+      "feature": "pain_behind_the_eyes",
+      "importance": 0.0113
+    }
+  ]
+}

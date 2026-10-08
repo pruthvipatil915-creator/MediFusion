@@ -1,0 +1,42 @@
+.footer-dark {
+  background-color: rgba(9, 13, 22, 0.95);
+  border-top: 1px solid rgba(59, 130, 246, 0.15);
+  color: #94a3b8;
+  padding-top: 3.5rem;
+  padding-bottom: 2rem;
+  font-size: 0.9rem;
+}
+
+.footer-brand {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.footer-link-group h6 {
+  color: #f8fafc;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.footer-link {
+  color: #94a3b8;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.5rem;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #38bdf8;
+}
+
+.disclaimer-box {
+  background: rgba(30, 41, 59, 0.4);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+  border-radius: 10px;
+  padding: 0.8rem 1.2rem;
+  font-size: 0.8rem;
+  color: #cbd5e1;
+}

@@ -1,0 +1,18 @@
+.profile-container {
+  max-width: 920px;
+}
+
+.profile-avatar-wrapper {
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary-blue, #3b82f6), var(--accent-cyan, #06b6d4));
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  box-shadow: 0 0 25px rgba(6, 182, 212, 0.4);
+  flex-shrink: 0;
+}
